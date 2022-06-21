@@ -1,31 +1,34 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import "./About.css";
-import profile_pic from "../assets/profile_pic.jpg";
-
+import Headshot from "../assets/Headshot.jpeg";
+  
 export default class About extends Component {
   render() {
     return (
       <div>
-        {/* <p>Design your About me page </p> */}
-        <div class="split left">
-          <div className="centered">
-            <img
-              className="profile_image"
-              src={profile_pic}
-              alt="Profile Pic"
-            ></img>
+          <div className="name_title">Jasmine McCoy
           </div>
+        <div class="split left">
+         {/* <div className="centered"> */}
+            <img 
+              className="profile_image"
+              src= {Headshot}
+              alt="Profile Pic"
+              ></img>
         </div>
         <div className="split right">
-          <div className="centered">
-            <div className="name_title">Your Name</div>
+          {/*<div className="centered">*/}
             <div className="brief_description">
-              Tell us about yourself in a few sentences. Tell us your interests
-              and say a fun fact about yourself.
-            </div>
+              <p>Hi, I'm Jasmine and I am a Computer Science and Business
+               Administration major at Northeastern University. One day
+               I aspire to work in Front-End Development and UI
+               design.
+               </p>
+               Feel free to add me on LinkedIn&nbsp;
+               <a href="https://www.linkedin.com/in/jasmine-mccoy-8b19b3231/">here</a>
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
